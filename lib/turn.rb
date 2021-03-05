@@ -32,12 +32,6 @@ def move(board, index, value = "X")
     return board
 end
 
-def request_input()
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  return index
-end
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -46,6 +40,7 @@ def turn(board)
   valid_move?(board, index)
   if valid_move?
     move(board, index)
+    return board
   else
     turn(board)
   end
