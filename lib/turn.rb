@@ -37,6 +37,7 @@ def request_input()
   input = gets.strip
   index = input_to_index(input)
   return index
+end
 
 def turn(board)
   request_input()
