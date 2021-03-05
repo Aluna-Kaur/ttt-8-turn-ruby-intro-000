@@ -40,11 +40,11 @@ def request_input()
 end
 
 def turn(board)
-  request_input()
+  index = request_input()
   valid_move?(board, index)
   if valid_move?
     move(board, index)
   else
-    request_input()
+    index = request_input()
   end
 end
