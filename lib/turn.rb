@@ -45,4 +45,5 @@ def turn(board)
     move(board, index)
   else
     request_input()
+  end
 end
